@@ -65,7 +65,18 @@
             Console.WriteLine("Elemen array telah tersusun");
             Console.WriteLine("---------------------------");
 
-            
+            //Menggunakan perulangan for untuk menampilkan nilai data yang sudah tersusun
+            //Akan mengulang hingga perulangan sama dengan jumlah data
+
+            for (int FA = 0; FA < n; FA++) ;
+            {
+                //Code untuk menuliskan data yang sudah berurut
+                Console.WriteLine(Convert.ToDecimal(azizah[FA])));
+            }
+            Console.WriteLine("");
+        }
+       
+
         }
             
-    }
+    
