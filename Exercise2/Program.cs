@@ -19,7 +19,25 @@
             //membuat fungsi (method) untuk menerima masukan
             public void Input() // Merupakan method yang hanya melewatkan nilai / tidak mengembalikan nilai
             {
+            //menerima angka untuk menentukan banyaknya data yang disimpan pada array.
+            while (true)
+            {
+                //Menuliskan berapa banyak elemen 
+                Console.Write("Masukkan banyaknya elemen pada array : ");
+                //Disimpan ke dalam variabel s
+                string s = Console.ReadLine();
+                //Konversi agar terbaca desimal
+                n = decimal.Parse(s);
+                //Menggunakan code pengambilan keputusan if else 
+                //Jika data <= 65 maka dilanjutkan
+                if (n <= 65)
+                    break;
+                else;
+                //Jika data lebih dari 65, maka outputnya "Array dapat mempunyai maksimal 65 elemen"
+                Console.WriteLine("\nArray dapat mempunyai maksimal 65 elemen.\n");
+            }
 
+                }
             }
         }
     }
