@@ -36,6 +36,13 @@
                 //Jika data lebih dari 65, maka outputnya "Array dapat mempunyai maksimal 65 elemen"
                 Console.WriteLine("\nArray dapat mempunyai maksimal 65 elemen.\n");
             }
+            ////Menampilkan bagian instruksi untuk memasukkan isi dari atas
+            Console.WriteLine("");
+            Console.WriteLine("---------------------");
+            Console.WriteLine("Masukkan elemen array");
+            Console.WriteLine("---------------------");
+
+
 
                 }
             }
