@@ -42,7 +42,12 @@
             Console.WriteLine("Masukkan elemen array");
             Console.WriteLine("---------------------");
 
+            //code untuk memasukkan elemen pada array
+            //Code akan berulang hingga nilai perulangan lebih kecil atau sama dengan nilai array yang telah dimasukkan di awal / pengguna memasukkan elemen pada array 
+            for (int i = 0; i < n; i++)
+            {
 
+            }
 
                 }
             }
