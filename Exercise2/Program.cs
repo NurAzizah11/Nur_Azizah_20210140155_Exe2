@@ -75,6 +75,25 @@
             }
             Console.WriteLine("");
         }
+
+        public void Insertionsortarray() //method untuk mengurutkan data dengan algoritma insertion sort 
+        {
+            //1. Repeat steps 2, 3, 4, and 5 varying i from 1 to n - 1
+            for (int i = 1; i < n; i++)
+            {
+                //2. Set temp = arr[i]
+                int FA = i - 1;
+                //3. Set j = i - 1
+                int FA = i - 1;
+                //4. Repeat until j becomes less than 0 or arr[j] becomes less than or equal to temp;
+                //a.Shift  the value at index j to index k + 1
+                //b.Descrement j by 1
+
+
+            }
+
+
+        }
        
 
         }
