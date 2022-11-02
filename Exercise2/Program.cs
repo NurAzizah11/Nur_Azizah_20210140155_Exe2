@@ -54,4 +54,18 @@
             }
 
         }
+
+        //Method yang tidak mengembalikan nilai
+        //Method untuk menampilkan array
+        public void Tampil()
+        {
+            //menampilkan array yang tersusun 
+            Console.WriteLine("");
+            Console.WriteLine("---------------------------");
+            Console.WriteLine("Elemen array telah tersusun");
+            Console.WriteLine("---------------------------");
+
+            
+        }
+            
     }
