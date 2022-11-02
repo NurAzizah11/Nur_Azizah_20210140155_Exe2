@@ -46,10 +46,12 @@
             //Code akan berulang hingga nilai perulangan lebih kecil atau sama dengan nilai array yang telah dimasukkan di awal / pengguna memasukkan elemen pada array 
             for (int i = 0; i < n; i++)
             {
-
+                //Code untuk memasukkan data
+                Console.Write("<" + (i + 1) + ">");
+                //Data yang tersimpan adalah string
+                string s1 = Console.ReadLine();
+                azizah[i] = (int)decimal.Parse(s1);
             }
 
-                }
-            }
         }
     }
