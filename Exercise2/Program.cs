@@ -4,21 +4,22 @@
 
     namespace Exercise2
     {
-        ////algoritma yang sesuai dengan intruksi method 1 adalah insertion sort
-        class ProgramInsertion //(kelas untuk algoritma insertion)
+    ////algoritma yang sesuai dengan intruksi method 1 adalah insertion sort
+    class ProgramInsertion //(kelas untuk algoritma insertion)
 
+    {
+        //3 digit nim terakhir : 155
+        //Deklarasi array int dengan ukuran maksimum 45 + 10 + 20 + 20 - 2 * 15 = 65 data
+        //(Maksimal data yang bisa disimpan adalah 65 data)
+        private decimal n;
+
+        //deklarasi variable desimal untuk menyimpan banyaknya data pada array
+        private decimal[] azizah = new decimal[65];
+        private decimal temp;
+
+        //membuat fungsi (method) untuk menerima masukan
+        public void Input() // Merupakan method yang hanya melewatkan nilai / tidak mengembalikan nilai
         {
-            //3 digit nim terakhir : 155
-            //Deklarasi array int dengan ukuran maksimum 45 + 10 + 20 + 20 - 2 * 15 = 65 data
-            //(Maksimal data yang bisa disimpan adalah 65 data)
-            private decimal n;
-
-            //deklarasi variable desimal untuk menyimpan banyaknya data pada array
-            private decimal[] azizah = new decimal[65];
-
-            //membuat fungsi (method) untuk menerima masukan
-            public void Input() // Merupakan method yang hanya melewatkan nilai / tidak mengembalikan nilai
-            {
             //menerima angka untuk menentukan banyaknya data yang disimpan pada array.
             while (true)
             {
@@ -68,34 +69,52 @@
             //Menggunakan perulangan for untuk menampilkan nilai data yang sudah tersusun
             //Akan mengulang hingga perulangan sama dengan jumlah data
 
-            for (int FA = 0; FA < n; FA++) ;
+            for (int NA = 0; NA < n; NA++) ;
             {
                 //Code untuk menuliskan data yang sudah berurut
                 Console.WriteLine(Convert.ToDecimal(azizah[FA])));
             }
             Console.WriteLine("");
         }
-
         public void Insertionsortarray() //method untuk mengurutkan data dengan algoritma insertion sort 
         {
             //1. Repeat steps 2, 3, 4, and 5 varying i from 1 to n - 1
             for (int i = 1; i < n; i++)
             {
                 //2. Set temp = arr[i]
-                int FA = i - 1;
+                int NA = i - 1;
                 //3. Set j = i - 1
-                int FA = i - 1;
+                int NA = i - 1;
                 //4. Repeat until j becomes less than 0 or arr[j] becomes less than or equal to temp;
                 //a.Shift  the value at index j to index k + 1
                 //b.Descrement j by 1
-
-
+                while (NA >= 0 && azizah[NA] > temp)
+                {
+                    azizah[NA + 1] = azizah[NA];
+                    NA = NA - 1;
+                }
+                //5.Store temp at index j +
+                azizah[NA + 1] = temp;
             }
-
-
         }
+    }
+
+
+    //Kelas untuk algoritma kedua : merge sort
+    class ClassMerge
+    {
+        //Deklarasi array int dengan ukuran maksimal 20 - 2 * 15 + 10 + 20 
+        //(Maksimal data yang bisa disimpan adalah 65 data)
+        private int[] azizah = new int[65];
+        //Deklarasi array kedua (B) dengan batas data 65
+        private int[] B = new int[65];
+        //deklarasi variable int untuk menyimpan banyaknya data pada array
+        private int n;
+
+    }
+
        
 
-        }
+       
             
     
